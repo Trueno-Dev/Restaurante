@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Restaurante Delicias</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Restaurante Delicias</h1>
+                <span class="tagline">Cocina Peruana Auténtica</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#menu">Menú</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#reservas">Reservas</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="reservas.html">Ver Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservas-list">
+            <div class="container">
+                <h2>Reservas Realizadas</h2>
+                <table id="tablaReservas">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Personas</th>
+                            <th>Comentarios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las reservas se insertarán aquí -->
+                    </tbody>
+                </table>
+                <div id="noReservas" style="display:none; text-align:center; margin-top:2rem;">No hay reservas registradas.</div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Restaurante Delicias</h3>
+                    <p>Auténtica cocina peruana desde 2010</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#menu">Menú</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#reservas">Reservas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Piura 123, Piura</p>
+                    <p><i class="fas fa-phone"></i> +51 1 234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@restaurantedelicias.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Restaurante Delicias. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // Mostrar reservas almacenadas en localStorage
+    function mostrarReservas() {
+        const tabla = document.getElementById('tablaReservas').querySelector('tbody');
+        const noReservas = document.getElementById('noReservas');
+        tabla.innerHTML = '';
+        let reservas = localStorage.getItem('reservasDelicias');
+        if (reservas) {
+            reservas = JSON.parse(reservas);
+            if (reservas.length > 0) {
+                reservas.forEach(reserva => {
+                    const fila = document.createElement('tr');
+                    fila.innerHTML = `
+                        <td>${reserva.nombre}</td>
+                        <td>${reserva.email}</td>
+                        <td>${reserva.telefono}</td>
+                        <td>${reserva.fecha}</td>
+                        <td>${reserva.hora}</td>
+                        <td>${reserva.personas}</td>
+                        <td>${reserva.comentarios || ''}</td>
+                    `;
+                    tabla.appendChild(fila);
+                });
+                noReservas.style.display = 'none';
+            } else {
+                noReservas.style.display = 'block';
+            }
+        } else {
+            noReservas.style.display = 'block';
+        }
+    }
+    document.addEventListener('DOMContentLoaded', mostrarReservas);
+    </script>
+</body>
+</html> 

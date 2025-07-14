@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Delicias - Cocina Peruana Auténtica</title>
+    <meta name="description" content="Restaurante Delicias ofrece auténtica cocina peruana en un ambiente elegante y acogedor. Reserva tu mesa y disfruta de nuestros platos tradicionales.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Restaurante Delicias</h1>
+                <span class="tagline">Cocina Peruana Auténtica</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" data-gtm-event="nav_click" data-gtm-section="inicio">Inicio</a></li>
+                <li><a href="#menu" data-gtm-event="nav_click" data-gtm-section="menu">Menú</a></li>
+                <li><a href="#nosotros" data-gtm-event="nav_click" data-gtm-section="nosotros">Nosotros</a></li>
+                <li><a href="#reservas" data-gtm-event="nav_click" data-gtm-section="reservas">Reservas</a></li>
+                <li><a href="#contacto" data-gtm-event="nav_click" data-gtm-section="contacto">Contacto</a></li>
+                <li><a href="reservas.html">Ver Reservas</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenidos a una Experiencia Gastronómica Única</h2>
+                <p>Descubre los auténticos sabores del Perú en un ambiente sofisticado y acogedor</p>
+                <button class="cta-button" onclick="scrollToSection('reservas')" data-gtm-event="cta_click" data-gtm-action="hero_reservation">
+                    Reservar Mesa
+                </button>
+            </div>
+            <div class="hero-image">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/e3/38/f8/restaurante-peruano-andino.jpg" alt="Ambiente del restaurante" loading="lazy">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="nosotros" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Nuestra Historia</h2>
+                        <p>Restaurante Delicias nace de la pasión por preservar y compartir la rica tradición culinaria peruana. Con más de una década de experiencia, hemos perfeccionado cada receta para ofrecer una experiencia gastronómica auténtica y memorable.</p>
+                        <p>Nuestro equipo de chefs especializados utiliza ingredientes frescos y técnicas tradicionales para crear platos que honran la herencia culinaria del Perú.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://www.hola.com/horizon/landscape/950a4b6188fc-portada-cocina-t.jpg" alt="Chef preparando platos" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="mission-vision">
+                    <div class="mission">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Misión</h3>
+                        <p>Ofrecer una experiencia gastronómica excepcional que celebre la diversidad y riqueza de la cocina peruana, brindando un servicio de excelencia en un ambiente elegante y acogedor.</p>
+                    </div>
+                    <div class="vision">
+                        <i class="fas fa-star"></i>
+                        <h3>Visión</h3>
+                        <p>Ser reconocidos como el referente de la cocina peruana auténtica, destacando por la calidad de nuestros ingredientes, la innovación en nuestras preparaciones y la calidez de nuestro servicio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2>Nuestras Especialidades</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1220,h_915/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-01-Lomo-Saltado%2Flomo-saltado-1" alt="Lomo Saltado" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Lomo Saltado</h3>
+                            <p>Tierno lomo de res salteado con cebolla roja, tomate y ají amarillo, acompañado de papas fritas artesanales y arroz jazmín.</p>
+                            <span class="price">S/. 30.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://www.elespectador.com/resizer/tyGJPN_YmWpagQFeXq_YYOxAKjY=/arc-anglerfish-arc2-prod-elespectador/public/2AVD5Z6Y2ZFWHETPQGCPLMNK4A.jpg" alt="Ceviche Clásico" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Ceviche Clásico</h3>
+                            <p>Pescado del día marinado en limón fresco, con cebolla roja, ají limo, cilantro y camote dulce. Acompañado de cancha serrana.</p>
+                            <span class="price">S/. 50.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://mercadosanmartinpe.com/wp-content/uploads/2024/08/aji-de-gallina.png" alt="Ají de Gallina" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Ají de Gallina</h3>
+                            <p>Pollo deshilachado en cremosa salsa de ají amarillo, nueces y queso parmesano. Servido con arroz blanco y papas sancochadas.</p>
+                            <span class="price">S/. 30.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://assets.afcdn.com/recipe/20210416/119491_w1024h1024c1cx362cy241cxt0cyt0cxb724cyb483.jpg" alt="Anticuchos" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Anticuchos de Corazón</h3>
+                            <p>Brochetas de corazón de res marinadas en ají panca y especias, a la parrilla. Acompañadas de papas doradas y salsa criolla.</p>
+                            <span class="price">S/. 20.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-cta">
+                    <button class="menu-button" data-gtm-event="menu_click" data-gtm-action="view_full_menu" onclick="window.location.href='carta.html'">
+                        Ver Carta Completa
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="container">
+                <h2>Galería de Nuestros Platos</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1220,h_915/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-01-Lomo-Saltado%2Flomo-saltado-1" alt="Plato gourmet 1" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.elespectador.com/resizer/tyGJPN_YmWpagQFeXq_YYOxAKjY=/arc-anglerfish-arc2-prod-elespectador/public/2AVD5Z6Y2ZFWHETPQGCPLMNK4A.jpg" alt="Plato gourmet 2" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://mercadosanmartinpe.com/wp-content/uploads/2024/08/aji-de-gallina.png" alt="Plato gourmet 3" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://assets.afcdn.com/recipe/20210416/119491_w1024h1024c1cx362cy241cxt0cyt0cxb724cyb483.jpg" alt="Plato gourmet 4" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservations Section -->
+        <section id="reservas" class="reservations">
+            <div class="container">
+                <h2>Reserva tu Mesa</h2>
+                <p>Asegura tu experiencia gastronómica completando el siguiente formulario</p>
+                
+                <form id="reservationForm" class="reservation-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="hora">Hora</label>
+                            <select id="hora" name="hora" required>
+                                <option value="">Selecciona una hora</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="personas">Nro Personas</label>
+                            <select id="personas" name="personas" required>
+                                <option value="">Selecciona</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                                <option value="mas">Más de 8</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios Especiales (Opcional)</label>
+                        <textarea id="comentarios" name="comentarios" placeholder="Alergias, celebraciones especiales, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button" data-gtm-event="form_submit" data-gtm-action="reservation_submit">
+                        Confirmar Reserva
+                    </button>
+                </form>
+                
+                <div id="reservationStatus" class="status-message" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Av. Piura 123, Piura<br>Piura, Perú</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+51 1 234-5678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>reservas@restaurantedelicias.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horarios</h3>
+                            <p>Lunes - Domingo<br>12:00 PM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Restaurante Delicias</h3>
+                    <p>Auténtica cocina peruana desde 2010</p>
+                    <div class="social-links">
+                        <a href="#" data-gtm-event="social_click" data-gtm-platform="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" data-gtm-event="social_click" data-gtm-platform="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" data-gtm-event="social_click" data-gtm-platform="tripadvisor"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#reservas">Reservas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Piura 123, Piura</p>
+                    <p><i class="fas fa-phone"></i> +51 1 234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@restaurantedelicias.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Restaurante Delicias. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
