@@ -64,7 +64,8 @@ function initializeMobileMenu() {
     const navMenu = document.querySelector('.nav-menu');
     
     if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', function() {
+        mobileToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
             navMenu.classList.toggle('active');
             this.classList.toggle('active');
             
@@ -80,6 +81,14 @@ function initializeMobileMenu() {
                 navMenu.classList.remove('active');
                 mobileToggle.classList.remove('active');
             });
+        });
+        
+        // Cerrar menú al hacer clic fuera de él
+        document.addEventListener('click', function(e) {
+            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            }
         });
     }
 }
